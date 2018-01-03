@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ea1a1"
+    tools:context="com.example.sophia.cst2335_final_group_project.TrackingActivity">
+
+    <ProgressBar
+        android:id="@+id/t_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/t_newActivity"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/backg"
+        android:progress="@android:integer/config_shortAnimTime"
+        android:progressTint="@android:color/holo_red_light"
+        android:visibility="visible" />
+
+    <FrameLayout
+        android:id="@+id/t_listview_Frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#d3dbf8">
+
+    </FrameLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/t_newActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/add"
+        app:backgroundTint="@android:color/background_light"
+        app:fabSize="normal"
+        app:layout_anchor="@id/t_listview_Frame"
+        app:layout_anchorGravity="bottom|end"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>
+

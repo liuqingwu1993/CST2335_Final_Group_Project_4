@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">CST2335_Final_Group_Project</string>
+    <string name="title_home">Automobile</string>
+    <string name="title_dashboard">Nutrition Tracker</string>
+    <string name="title_notifications">House Thermostat</string>
+    <string name="title_notifications1">Activity</string>
+    <string name="title_activity_food__nutrition__tracker">Food_Nutrition_Tracker</string>
+
+    <!-- activity tracking -->
+    <string name="t_new_activity">add</string>
+    <string name="t_edit_activity">Update </string>
+    <string name="t_activities">Enjoy</string>
+    <string name="t_wanna_back">Back?</string>
+    <string name="t_wanna_update">Upfate Confirm?</string>
+    <string name="t_wanna_delete">Delete Confirm?</string>
+    <string name="t_act_save_success">Activity Saved</string>
+    <string name="t_act_update_success">Activity Updated </string>
+    <string name="t_act_delete_success">Activity Deleted </string>
+    <string name="t_ok">OK</string>
+    <string name="t_cancel">Cancel</string>
+    <string name="t_save">Save</string>
+    <string name="t_update">Update</string>
+    <string name="t_delete">Delete</string>
+    <string name="t_stay">Stay in the page</string>
+    <string name="t_author">Author: Qingwu Liu</string>
+    <string name="t_version">Version: 1.0.0</string>
+    <string name="t_help">
+        Author: Qingwu Liu \t\t Version: 1.0.0 \n
+        -----------------------------------------\n\n
+        1. Help \n\n
+        Click menu -> All information about this APP. \n\n
+        2. Activity Summary \n\n
+        Click menu -> Display summary of activity the user does per month. \n\n
+        3. Add Activity \n\n
+        Add new activity. \n\n
+        4. Edit Activity \n\n
+        Click the item to editing,
+        You can update,resave, or delete activity. \n\n
+    </string>
+    <string-array name="t_activities">
+        <item>Running</item>
+        <item>Walking</item>
+        <item>Biking</item>
+        <item>Swimming</item>
+        <item>Skating</item>
+    </string-array>
+    <string name="t_type">Type</string>
+    <string name="t_time">Time</string>
+    <string name="t_duration">Duration</string>
+    <string name="t_comment">Comment</string>
+    <string name="t_count_per_act">Count per activity:\n</string>
+    <string name="t_duration_per_act">Duration per activity:\n</string>
+    <string name="t_start_at">start at </string>
+    <string name="t_for"> for </string>
+    <string name="t_min_note"> minutes. Note: </string>
+    <string name="t_help_title">Help</string>
+    <string name="t_stats_title">Summary</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="ok">Ok</string>
+    <string name="action_help">Help</string>
+    <string name="version_info">CST2335 Final Project, Version 1.0 By Jinling Ma</string>
+    <string name="toolbar_dialog">Nutrition Tracker Help</string>
+    <string name="helpMsg">
+        \nVersion: 1.0\nAuthor: Jiling Ma\n\n
+
+        To add new Nutrition information, click Todays Nutrition option from side bar.\n
+        To view history, select History option from side bar.\n
+        To delete recode, simply select the recode and click the delete button.
+
+    </string>
+    <string name="food_name">Food Name:</string>
+    <string name="edit_food_name">what have you had today?</string>
+    <string name="Calories">Total Calories:</string>
+    <string name="CaloriesHit">How many Calories it has?</string>
+    <string name="fat">Total Fat:</string>
+    <string name="fatHint">How many fat it has?</string>
+    <string name="Carbohydrate">Carbohydrate:</string>
+    <string name="CarbohydrateHint">How many Carbohydrate it has?</string>
+    <string name="Protein">Total Protein:</string>
+    <string name="ProteinHint">How many Protein it has?</string>
+    <string name="Date">Date</string>
+    <string name="DateHint">When did you had your food?</string>
+    <string name="Time">Time</string>
+    <string name="TimeHint">What time did you had your food?</string>
+    <string name="submit">Add</string>
+    <string name="update">UPDATE</string>
+    <string name="Today_Summary">Today Nutrition Summary</string>
+    <string name="CaloriesAvg">Average Calories:</string>
+    <string name="calAvg">Average Calories per day</string>
+    <string name="totalCalYd">Total Calories were eaten last day:</string>
+    <string name="contant">AutoMobile is a keeping record gas you buy and how much Kilometer you travel,also its store price</string>
+
+    <string name="contantT">Thermostate is an app that is use to set rule
+    like Days Time Temperature and you can edit it and also delate entry accourding to your
+    requirements .</string>
+    <string name="spinner_title">Select Category</string>
+</resources>

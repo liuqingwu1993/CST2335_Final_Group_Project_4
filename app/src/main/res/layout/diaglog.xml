@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="@string/toolbar_dialog"
+        android:background="#ffc0cb"
+        android:textSize="18sp" />
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffc0cb"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@drawable/icons8_dona_sarkar_50" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffc0cb"
+        android:text="@string/helpMsg" />
+
+</LinearLayout>
