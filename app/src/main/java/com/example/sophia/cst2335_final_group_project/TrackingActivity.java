@@ -99,7 +99,7 @@ public class TrackingActivity extends AppCompatActivity {
         setContentView(R.layout.activity_tracking);
 
         pBar = (ProgressBar) findViewById(R.id.t_progressBar);
-        pBar.setVisibility(View.VISIBLE);
+        pBar.setVisibility(View.INVISIBLE);
 
         InitActivityTracking init = new InitActivityTracking();
         init.execute();
@@ -112,11 +112,27 @@ public class TrackingActivity extends AppCompatActivity {
         protected String doInBackground(String... strings) {
 
             SystemClock.sleep(100);
-            pBar.setProgress(20);
+            pBar.setProgress(10);
             TrackingDatabaseHelper dbHelper = new TrackingDatabaseHelper(TrackingActivity.this);
             sqldb = dbHelper.getWritableDatabase();
-            SystemClock.sleep(200);
+            SystemClock.sleep(100);
+            pBar.setProgress(20);
+            SystemClock.sleep(100);
             pBar.setProgress(30);
+            SystemClock.sleep(100);
+            pBar.setProgress(40);
+            SystemClock.sleep(100);
+            pBar.setProgress(50);
+            SystemClock.sleep(100);
+            pBar.setProgress(60);
+            SystemClock.sleep(100);
+            pBar.setProgress(70);
+            SystemClock.sleep(100);
+            pBar.setProgress(80);
+            SystemClock.sleep(100);
+            pBar.setProgress(90);
+            SystemClock.sleep(100);
+            pBar.setProgress(100);
             //populate activity list
             c = sqldb.rawQuery("select * from " + TrackingDatabaseHelper.TABLE_NAME,null );
             c.moveToFirst();
@@ -138,8 +154,7 @@ public class TrackingActivity extends AppCompatActivity {
                 activityList.add(row);
                 c.moveToNext();
             }
-            SystemClock.sleep(500);
-            pBar.setProgress(80);
+
             final Intent intent = new Intent(TrackingActivity.this, TrackingAddActivity.class);
             findViewById(R.id.t_newActivity).setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -148,9 +163,14 @@ public class TrackingActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
-            SystemClock.sleep(100);
-            pBar.setProgress(10);
+
             return null;
+        }
+
+        @Override
+        protected void onPreExecute() {
+            pBar.setVisibility(View.VISIBLE );
+            pBar.setProgress(0);
         }
 
         protected void onProgressUpdate(Integer ...values){
@@ -159,7 +179,7 @@ public class TrackingActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            pBar.setVisibility(View.VISIBLE );
+            pBar.setVisibility(View.INVISIBLE );
             TrackingListViewFragment listViewFragment = new TrackingListViewFragment();
             listViewFragment.init(activityList);
 
